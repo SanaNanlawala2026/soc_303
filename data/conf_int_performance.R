@@ -47,7 +47,7 @@ upper_bound_performance
 
 #creating histogram
 online |> 
-  ggplot(aes(x = `Study time (Hours)`)) +
+  ggplot(aes(x = `Performance in online`)) +
   geom_bar(fill= "white", color = "black")+ 
   geom_vline(xintercept = mean_value_performance, 
              color = "red", linetype = "dashed") + 
