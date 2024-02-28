@@ -1,3 +1,4 @@
+## hello ##
 library(tidyverse)
 library(ggplot2)
 online <- read_csv("data/online_review.csv")
@@ -26,7 +27,7 @@ n_performance <- length(online$'Performance in online')
 standard_deviation_performance <- sd(online$'Performance in online')
 
 # Find the standard error
-standard_error_performance <- standard_deviation_performance / sqrt(n)
+standard_error_performance <- standard_deviation_performance / sqrt(1032)
 
 
 alpha = 0.05
