@@ -46,7 +46,7 @@ upper_bound_performance <- mean_value_performance + margin_error_performance
 lower_bound_performance
 upper_bound_performance
 
-#creating histogram
+#creating histogram 
 online |> 
   ggplot(aes(x = `Performance in online`)) +
   geom_bar(fill= "white", color = "black")+ 

@@ -14,7 +14,6 @@ levels(online$`Level of Education`)
 ###
 
 level_mapping <- c("School" = 0, "Under Graduate" = 1, "Post Graduate" = 2)
-
 online$levels_ed_num <- level_mapping[online$`Level of Education`]
 
 online |> 
