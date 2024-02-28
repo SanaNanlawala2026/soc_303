@@ -1,5 +1,6 @@
 library(tidyverse)
 library(ggplot2)
+library(knitr)
 online <- read_csv("data/online_review.csv")
 level_mapping <- c("School" = 0, "Under Graduate" = 1, "Post Graduate" = 2)
 class_mapping <- c("Rich" = 0, "Middle Class" = 1, "Poor" = 2)
@@ -18,3 +19,4 @@ online |>
   ggplot(aes(x = class_level, y = `Performance in online`)) +
   geom_jitter() +
   geom_smooth(method = "lm", se = FALSE) 
+
